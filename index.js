@@ -5,7 +5,7 @@ setInterval(() => {
   fetch(`https://nia-statistics.com/api/get?platform=youtube&type=channel&id=${id}`).then((res) => res.json()).then((data) => {
                      document.getElementById("counter").innerHTML = data.estSubCount;
 
-    document.getElementById("userimg").src = data.snippet.thumbnails.high.url;
+    document.getElementById("userimg").src = data.snippet.thumbnails.url[3];
     document.getElementById("userName").innerHTML = data.snippet.title;
                   });
       }, 2000);
