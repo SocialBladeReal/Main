@@ -10,6 +10,10 @@ setInterval(() => {
                   });
       }, 2000);
 
+document.getElementById(
+  "subscribeBtn"
+).href = `https://youtube.com/channel/${id}?sub_confirmation=1`;
+
 function search() {
   const prompt = window.prompt("Enter channel name, ID, or URL.");
   if (prompt)
