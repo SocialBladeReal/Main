@@ -7,6 +7,8 @@ setInterval(() => {
 
     document.getElementById("userimg").src = data.snippet.thumbnails[2].url;
     document.getElementById("userName").innerHTML = data.snippet.title;
+    if (chart.series[0].points.length == 1500) chart.series[0].data[0].remove();
+    chart.series[0].addPoint([Date.now(), data.estSubCount])
                   });
       }, 2000);
 
