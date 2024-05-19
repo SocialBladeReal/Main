@@ -36,8 +36,7 @@ var chart = new Highcharts.chart({
         visible: false,
     },
     credits: {
-        enabled: true,
-        text: "Livecountsedit"
+        enabled: false,
     },
 
     series: [{
